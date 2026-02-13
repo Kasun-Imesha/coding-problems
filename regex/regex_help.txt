@@ -1,0 +1,40 @@
+# flags=re.IGNORECASE # to ignore case
+# code = "Kas.*?n" for lazy search - least length span i.e. stops at the 1st occuracnce of 'n'. If no ? then it'll go untill the last 'n' 
+# code = "((?!\n)\s+)"  #whitespace except new line
+# code = "\s" # white space 
+# code = "\b" # Word boundary
+# code = "\." # period
+# code = "\w" # any character (including digits)
+# code = "\W" # any non character (negation of \w)
+# code = "\d" # any  digit
+# code = "\D" # non digit
+# code = "\d+" # one or more digits
+# code = "\D+" # one or more non digits
+# code = "." # one character except new line
+# code = "$" #end of string 
+# code = "^" #start of string 
+# code = "er|ic" #match er or ic
+# code = "[b-e]" #one character from b to e
+# code = "[b-e]+" #one or more character from b to e
+# code = "[^b-e]" #one character except from b to e
+# code = "[^aeiou]" #one character except a, e, i, o, u
+# code = "[aeiou]" #one character from a, e, i, o, u
+# code = "(Mat)" #Items within parenthesis are retrieved
+# code = "(M(at))" #Items within the sub-parenthesis are retrieved
+# code = "[ic]{1,}" #One or more continuous occurrences of i or c
+# code = "[ic]+" #One or more continuous occurrences of i or c
+# code = "[ic]*" #Zero or more continuous occurrences of i or c
+# code = "[ic]?" #Zero or one continuous occurrences of i or c
+# code = r"Co*l"
+# code = r"C+oool"
+# code = r"[MATmat]{3}" #match 3 continuous occurances of M, A, T, m, a, t
+# code = r"\b[MATmat]{3}\b" #match 3 continuous occurances of M, A, T, m, a, t with boundary on both sides
+# code = "word1|word2" word1 or word2
+# code = (?<=<lookbehind_regex>) #Positive lookbehind
+# code = (?=<lookahead_regex>) #Positive lookahead
+# code = re.sub(r"(?<=\w)\W+(?=\w)", " ", Hello@#world+dear!) --> Hello world dear!
+# code = (?<!<lookbehind_regex>) #Negative Lookbehind
+# code = (?!<lookahead_regex>) #Negative Lookahead
+# code = re.sub(r"(\d{2})-(\d{2})-(\d{4})", r"\3-\2-\1", "yesterday was 01-09-2024.")  # group match 01-09-2024 --> 2024-09-01
+
+
